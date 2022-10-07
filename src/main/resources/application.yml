@@ -1,0 +1,24 @@
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      
+    properties:
+     hibernate:
+      dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+      
+     
+  datasource:
+    url: jdbc:mysql://localhost:3306/reactmysqlcrud?allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
+    username: root
+    password: root
+    driverClassName: com.mysql.cj.jdbc.Driver
+            
+server:
+  port: 8081
+  
+  
+    
+  
+  
